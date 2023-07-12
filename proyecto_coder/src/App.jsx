@@ -1,11 +1,11 @@
 import NavBar from "./components/Navbar/NavBar"
-import 'bootstrap/dist/css/bootstrap.min.css';
+import ItemListContainer from "./components/ItemListContainer/ItemListContainer"
 
 function App() {
   return (
     <>
-    <NavBar></NavBar>
-    <h1>hola</h1>
+      <NavBar/>
+      <ItemListContainer greetings="Bienvenidos a mi pagina"/>
     </>
   )
 }
