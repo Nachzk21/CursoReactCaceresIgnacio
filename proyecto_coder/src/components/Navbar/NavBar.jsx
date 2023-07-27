@@ -7,7 +7,7 @@ import CartWidget from '../CartWidget/CartWidget';
 function NavBar() {
     return (
         <>
-            <Navbar bg="info" data-bs-theme="dark">
+            <Navbar bg="warning" data-bs-theme="light">
                 <Container>
                     <Navbar.Brand href="#home">
                         <img
@@ -15,16 +15,16 @@ function NavBar() {
                             src="/img/SinTacc.png"
                             width="40"
                             height="45"
-                            className="d-inline-block align-top"
+                            className="d-inline-block "
                         />{' '}
                         Sintaxis
                     </Navbar.Brand>
                     <Nav className="me-auto">
-                        <Nav.Link href="#home">Home</Nav.Link>
-                        <Nav.Link href="#features">Features</Nav.Link>
-                        <Nav.Link href="#pricing">Pricing</Nav.Link>
+                        <Nav.Link href="./pages/Contactos.contactos.jsx"><h5>Comida</h5></Nav.Link>
+                        <Nav.Link href="#features"><h5>Contacto</h5></Nav.Link>
+                        <Nav.Link href="#pricing"><h5>Nuestros locales</h5></Nav.Link>
                     </Nav>
-                <CartWidget></CartWidget>
+                    <CartWidget></CartWidget>
                 </Container>
             </Navbar>
         </>
