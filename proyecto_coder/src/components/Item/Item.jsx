@@ -1,11 +1,16 @@
 import React from 'react'
 import {Card, ListGroup, Button} from 'react-bootstrap'
 import ItemCount from '../ItemCount/itemCount'
+import { Link } from 'react-router-dom'
+
+
 const Item = ({producto}) => {
 
     const onAdd = (cantidad) =>{
         console.log(`compraste ${cantidad} productos`)
     }
+
+
 
     return (
         <Card style={{ width: '18rem', height:"12rem" }}>
@@ -13,7 +18,7 @@ const Item = ({producto}) => {
             <Card.Body>
                 <Card.Title>{producto.plato}</Card.Title>
                 <Card.Text>
-                    {producto.descipcion}
+                <Button variant="secondary" as={Link} to={`/comida/${producto.id}`}>Saber mas</Button>
                 </Card.Text>
             </Card.Body>
             <ListGroup className="list-group-flush">
