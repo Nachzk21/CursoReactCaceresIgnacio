@@ -5,12 +5,12 @@ import { useParams } from 'react-router-dom'
 
 
 const Comida = () => {
-    const {categoriaId} = useParams()
+    
 
 
     
     return (
-        <ItemListContainer categorias={categoriaId}></ItemListContainer>
+        <ItemListContainer></ItemListContainer>
     )
 }
 
